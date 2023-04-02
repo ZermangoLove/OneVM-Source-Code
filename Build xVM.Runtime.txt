@@ -1,0 +1,18 @@
+If you are going to update xVM.Runtime:
+---------------------------------------------------------------- ---------------------------------------------------------------- ---------------------------------------------------------------- ---------------------------------------------------------------- ---------------------------------------------------------------- -------------------------
+First open the project by clicking "xVM.sln".
+
+Make your update.
+
+If "English" from the IDE (IDE: Visual Studio), Click "Build -> Recompile Solution".
+If "English" Click "Build -> Rebuild Solution".
+
+Go to "RT2AES" folder then "bin -> Debug" folder.
+After entering, run the "RT2AES.exe" file, then press the "Browse..." button, select "xVM-Virtualization\xVM.Runtime\bin\Debug\Runtime.dll" and press the "Encrypt" button.
+
+"Encrypted!" After seeing the message, two files will appear in the folder where "RT2AES.exe" is, "c60f5823495b4242" and "f52b6acb1e894178"
+Copy and replace these two files in the "xVM.Helper\Resources" folder.
+
+And then if it's "English" again Click "Compile -> Recompile Solution".
+If "English" Click "Build -> Rebuild Solution".
+---------------------------------------------------------------- ---------------------------------------------------------------- ---------------------------------------------------------------- ---------------------------------------------------------------- ---------------------------------------------------------------- -------------------------

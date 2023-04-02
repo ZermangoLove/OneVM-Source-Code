@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45B6B86A-D081-4CCB-A548-33D669EF195B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xVM.Helper</RootNamespace>
+    <AssemblyName>xVM.Helper</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateSerializationAssemblies>On</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Trace|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Debug\</OutputPath>
+    <DefineConstants>TRACE;__TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Arithmetic.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\ArithmeticEmulator.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\ArithmeticTypes.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\ArithmeticVT.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Add.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Div.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Abs.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Ceiling.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Cos.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Floor.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Log.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Log10.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Round.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Sin.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Sqrt.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Tan.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Tanh.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Maths\Truncate.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Mul.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Sub.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Functions\Xor.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Generator\Generator.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\iArithmetic.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\iFunction.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Token.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Utils\ArithmeticUtils.cs" />
+    <Compile Include="Core\Protections [NEW]\Arithmetic\Value.cs" />
+    <Compile Include="Core\Protections [NEW]\EncryptStrings\DecryptStringsHelper.cs" />
+    <Compile Include="Core\Protections [NEW]\EncryptStrings\EncryptStrings.cs" />
+    <Compile Include="Core\Protections [NEW]\EncryptStrings\InjectHelper4EncryptStrings.cs" />
+    <Compile Include="Core\Helpers [NEW]\dnlib\FullNameCreator.cs" />
+    <Compile Include="Core\Helpers [NEW]\dnlib\RecursionCounter.cs" />
+    <Compile Include="Core\Helpers [NEW]\dnlib\Threading\Extensions.cs" />
+    <Compile Include="Core\Helpers [NEW]\dnlib\Threading\IThreadSafeList.cs" />
+    <Compile Include="Core\Helpers [NEW]\dnlib\Threading\ThreadSafeListCreator.cs" />
+    <Compile Include="Core\Helpers [NEW]\dnlib\Threading\ThreadSafeListWrapper.cs" />
+    <Compile Include="Core\Helpers [NEW]\FullNameToMethod_Class.cs" />
+    <Compile Include="Core\Helpers [NEW]\dnlib\GenericArguments.cs" />
+    <Compile Include="Core\Helpers [NEW]\Injection\DataInjector.cs" />
+    <Compile Include="Core\Helpers [NEW]\Injection\Injector.cs" />
+    <Compile Include="Core\Helpers [NEW]\RawHeap.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\Generic\BitHelper.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\Generic\HashHelpers.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\Generic\HashSet.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\Generic\HashSetDebugView.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\Generic\HashSetEqualityComparer.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\Generic\IReadOnlyCollection.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\Generic\IReadOnlyCollectionContract.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\Generic\ISet.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\IList.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\IListContract.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\IStructuralComparable.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Collections\IStructuralEquatable.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Diagnostics\Contracts\Contracts.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Runtime\CompilerServices\ExtensionAttribute.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Runtime\CompilerServices\TypeDependencyAttribute.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\SR.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Tuples.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\Extensions.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\LoadOptions.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\SaveOptions.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XAttribute.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XCData.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XComment.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XContainer.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XDeclaration.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XDocument.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XDocumentType.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XElement.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XIterators.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XName.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XNamespace.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XNode.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XNodeDocumentOrderComparer.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XNodeEqualityComparer.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XNodeNavigator.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XNodeReader.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XNodeWriter.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XObject.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XObjectChange.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XObjectChangeEventArgs.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XProcessingInstruction.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XStreamingElement.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XText.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\Linq\XUtil.cs" />
+    <Compile Include="Core\Helpers [NEW]\System Class\Xml %28Mono%29\XPath\Extensions.cs" />
+    <Compile Include="Core\Protections [NEW]\Anti Dump\Inject.cs" />
+    <Compile Include="Core\Protections [NEW]\Anti Dump\Runtime.cs" />
+    <Compile Include="Core\Protections [NEW]\Anti Debug\Inject.cs" />
+    <Compile Include="Core\Protections [NEW]\Anti Debug\Runtime.cs" />
+    <Compile Include="Core\Protections [NEW]\Anti_De4dot.cs" />
+    <Compile Include="Core\Main Class [NEW]\Optimize [NEW]\AutoMethodBodySimplifyOptimize.cs" />
+    <Compile Include="Core\Main Class [NEW]\Optimize [NEW]\InstructionCollectionExtension.cs" />
+    <Compile Include="Core\Main Class [NEW]\Optimize [NEW]\MethodReferenceEqualityComparer.cs" />
+    <Compile Include="Core\Main Class [NEW]\Optimize [NEW]\SetNewInstructions.cs" />
+    <Compile Include="Core\Main Class [NEW]\XMLUtils [NEW].cs" />
+    <Compile Include="Core\Merge_VMP_Runtime [NEW].cs" />
+    <Compile Include="Core\Protections [NEW]\ConfuserEX Control Flow\CEXBlockBase.cs" />
+    <Compile Include="Core\Protections [NEW]\ConfuserEX Control Flow\CEXBlockParser.cs" />
+    <Compile Include="Core\Protections [NEW]\ConfuserEX Control Flow\CEXBlockType.cs" />
+    <Compile Include="Core\Protections [NEW]\ConfuserEX Control Flow\CFContext.cs" />
+    <Compile Include="Core\Protections [NEW]\ConfuserEX Control Flow\CEXControlFlow.cs" />
+    <Compile Include="Core\Protections [NEW]\ConfuserEX Control Flow\ExpressionPredicate.cs" />
+    <Compile Include="Core\Protections [NEW]\ConfuserEX Control Flow\CEXInstrBlock.cs" />
+    <Compile Include="Core\Protections [NEW]\ConfuserEX Control Flow\CEXManglerBase.cs" />
+    <Compile Include="Core\Protections [NEW]\ConfuserEX Control Flow\CEXScopeBlock.cs" />
+    <Compile Include="Core\Protections [NEW]\ConfuserEX Control Flow\SwitchMangler.cs" />
+    <Compile Include="Core\Constants String Protection %28For RT%29 [NEW]\CEContext.cs" />
+    <Compile Include="Core\Constants String Protection %28For RT%29 [NEW]\ConstantsProtection.cs" />
+    <Compile Include="Core\Constants String Protection %28For RT%29 [NEW]\DynamicMode.cs" />
+    <Compile Include="Core\Constants String Protection %28For RT%29 [NEW]\EncodeElements.cs" />
+    <Compile Include="Core\Constants String Protection %28For RT%29 [NEW]\EncodePhase.cs" />
+    <Compile Include="Core\Constants String Protection %28For RT%29 [NEW]\ReferenceReplacer.cs" />
+    <Compile Include="Core\Anti-Tamper %28For Execute%29 [NEW]\AntiTamperEXEContext.cs" />
+    <Compile Include="Core\Anti-Tamper %28For Execute%29 [NEW]\DynamicDeriver.cs" />
+    <Compile Include="Core\Anti-Tamper %28For Execute%29 [NEW]\NormalMode.cs" />
+    <Compile Include="Core\Helpers [NEW]\Annotations.cs" />
+    <Compile Include="Core\AST\ASTConstant.cs" />
+    <Compile Include="Core\AST\ASTExpression.cs" />
+    <Compile Include="Core\AST\ASTNode.cs" />
+    <Compile Include="Core\AST\ASTType.cs" />
+    <Compile Include="Core\AST\ASTVariable.cs" />
+    <Compile Include="Core\AST\ILAST\IILASTNode.cs" />
+    <Compile Include="Core\AST\ILAST\IILASTStatement.cs" />
+    <Compile Include="Core\AST\ILAST\ILASTAssignment.cs" />
+    <Compile Include="Core\AST\ILAST\ILASTExpression.cs" />
+    <Compile Include="Core\AST\ILAST\ILASTPhi.cs" />
+    <Compile Include="Core\AST\ILAST\ILASTTree.cs" />
+    <Compile Include="Core\AST\ILAST\ILASTVariable.cs" />
+    <Compile Include="Core\AST\ILAST\ILASTVariableType.cs" />
+    <Compile Include="Core\AST\IL\IHasOffset.cs" />
+    <Compile Include="Core\AST\IL\IILOperand.cs" />
+    <Compile Include="Core\AST\IL\ILBlock.cs" />
+    <Compile Include="Core\AST\IL\ILDataTarget.cs" />
+    <Compile Include="Core\AST\IL\ILImmediate.cs" />
+    <Compile Include="Core\AST\IL\ILInstrList.cs" />
+    <Compile Include="Core\AST\IL\ILInstruction.cs" />
+    <Compile Include="Core\AST\IL\ILJumpTable.cs" />
+    <Compile Include="Core\AST\IL\ILJumpTarget.cs" />
+    <Compile Include="Core\AST\IL\ILMethodTarget.cs" />
+    <Compile Include="Core\AST\IL\ILRegister.cs" />
+    <Compile Include="Core\AST\IL\ILRelReference.cs" />
+    <Compile Include="Core\AST\InstrAnnotation.cs" />
+    <Compile Include="Core\AST\IR\IIROperand.cs" />
+    <Compile Include="Core\AST\IR\IRBlockTarget.cs" />
+    <Compile Include="Core\AST\IR\IRConstant.cs" />
+    <Compile Include="Core\AST\IR\IRDataTarget.cs" />
+    <Compile Include="Core\AST\IR\IRInstrList.cs" />
+    <Compile Include="Core\AST\IR\IRInstruction.cs" />
+    <Compile Include="Core\AST\IR\IRJumpTable.cs" />
+    <Compile Include="Core\AST\IR\IRMetaTarget.cs" />
+    <Compile Include="Core\AST\IR\IRPointer.cs" />
+    <Compile Include="Core\AST\IR\IRRegister.cs" />
+    <Compile Include="Core\AST\IR\IRVariable.cs" />
+    <Compile Include="Core\AST\IR\IRVariableType.cs" />
+    <Compile Include="Core\AST\TypeInference.cs" />
+    <Compile Include="Core\Helpers [NEW]\ControlFlowGraph.cs" />
+    <Compile Include="Core\Helpers [NEW]\KeySequence.cs" />
+    <Compile Include="Core\Helpers [NEW]\MutationHelperCore.cs" />
+    <Compile Include="Core\Helpers [NEW]\MutationHelper.cs" />
+    <Compile Include="Core\Protections [NEW]\Generator\Randomizer.cs" />
+    <Compile Include="Core\Protections [NEW]\Hide and Encrypt Strings\HideCallString.cs" />
+    <Compile Include="Core\Protections [NEW]\Hide and Encrypt Strings\Runtime.cs" />
+    <Compile Include="Core\Protections [NEW]\HideMethod.cs" />
+    <Compile Include="Core\Protections [NEW]\ImportProtection.cs" />
+    <Compile Include="Core\Protections [NEW]\IntConfusion.cs" />
+    <Compile Include="Core\Protections [NEW]\IntEncoding.cs" />
+    <Compile Include="Core\Protections [NEW]\InvalidMetadataProtection.cs" />
+    <Compile Include="Core\Protections [NEW]\JunkAdd\JunkAdd.cs" />
+    <Compile Include="Core\Protections [NEW]\JunkAdd\JunkGen.cs" />
+    <Compile Include="Core\Protections [NEW]\LocalToField.cs" />
+    <Compile Include="Core\Protections [NEW]\Merge .NET\Inject.cs" />
+    <Compile Include="Core\Protections [NEW]\Merge .NET\Runtime.cs" />
+    <Compile Include="Core\Protections [NEW]\Multiply.cs" />
+    <Compile Include="Core\Protections [NEW]\Mutation\Others\SizeOf.cs" />
+    <Compile Include="Core\Protections [NEW]\Mutation\SugarMTBlockHandler.cs" />
+    <Compile Include="Core\Protections [NEW]\Mutation\SugarMTBlockType.cs" />
+    <Compile Include="Core\Protections [NEW]\Mutation\Int32Local.cs" />
+    <Compile Include="Core\Protections [NEW]\Mutation\MethodBlocks\SugarMTBlock.cs" />
+    <Compile Include="Core\Protections [NEW]\Mutation\MethodBlocks\SugarMTBlockParser.cs" />
+    <Compile Include="Core\Protections [NEW]\Mutation\MethodBlocks\SugarMTBlockUtils.cs" />
+    <Compile Include="Core\Protections [NEW]\Mutation\MethodBlocks\SugarMTExtension.cs" />
+    <Compile Include="Core\Protections [NEW]\Mutation\MethodBlocks\Trace.cs" />
+    <Compile Include="Core\Protections [NEW]\Mutation\MutationConfusion.cs" />
+    <Compile Include="Core\Protections [NEW]\OtherRenamer.cs" />
+    <Compile Include="Core\Protections [NEW]\ProcessMonitor\ProcessMonitor.cs" />
+    <Compile Include="Core\Protections [NEW]\ProcessMonitor\ProcessMonitor_Runtime.cs" />
+    <Compile Include="Core\Protections [NEW]\RandomOutline\RandomOutline.cs" />
+    <Compile Include="Core\Protections [NEW]\RandomOutline\RandomOutline_SecureRandoms.cs" />
+    <Compile Include="Core\Protections [NEW]\Resource Protection\Inject.cs" />
+    <Compile Include="Core\Protections [NEW]\Resource Protection\Runtime.cs" />
+    <Compile Include="Core\Protections [NEW]\Sugar Control Flow\ControlFlow.cs" />
+    <Compile Include="Core\Protections [NEW]\Sugar Control Flow\SugarBlockParser.cs" />
+    <Compile Include="Core\Protections [NEW]\Sugar Control Flow\ManglerBase.cs" />
+    <Compile Include="Core\Protections [NEW]\Sugar Control Flow\Predicate.cs" />
+    <Compile Include="Core\Protections [NEW]\Sugar Control Flow\SwitchMangler.cs" />
+    <Compile Include="Core\RT\LdstrDynamicDeriver [NEW].cs" />
+    <Compile Include="Core\RT\SaveNormalRuntimeLib [NEW].cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Common\CRC.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Common\InBuffer.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Common\OutBuffer.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Compress\Base\LzmaBase.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Compress\Base\LzmaDecoder.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Compress\Base\LzmaEncoder.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Compress\LZ\IMatchFinder.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Compress\LZ\LzBinTree.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Compress\LZ\LzInWindow.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Compress\LZ\LzOutWindow.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Compress\RangeCoder\RangeCoder.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Compress\RangeCoder\RangeCoderBit.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\Compress\RangeCoder\RangeCoderBitTree.cs" />
+    <Compile Include="Core\Services [NEW]\LZMA\ICoder.cs" />
+    <Compile Include="Core\Protections [NEW]\OpCodeProtection.cs" />
+    <Compile Include="Core\RT\ILVDynamicDeriver [NEW].cs" />
+    <Compile Include="Core\Main Class [NEW]\ProtectionException [NEW].cs" />
+    <Compile Include="Core\MutationCore [NEW].cs" />
+    <Compile Include="Core\NativeMethods [NEW].cs" />
+    <Compile Include="Core\OpCode Fixer [NEW]\CalliFixer %28Calli Support%29 [NEW].cs" />
+    <Compile Include="Core\CFG\BasicBlock.cs" />
+    <Compile Include="Core\CFG\BlockFlags.cs" />
+    <Compile Include="Core\CFG\BlockParser.cs" />
+    <Compile Include="Core\CFG\CILInstrList.cs" />
+    <Compile Include="Core\CFG\IBasicBlock.cs" />
+    <Compile Include="Core\CFG\ScopeBlock.cs" />
+    <Compile Include="Core\CFG\ScopeType.cs" />
+    <Compile Include="Core\Main Class [NEW]\DnlibUtils [NEW].cs" />
+    <Compile Include="Core\Main Class [NEW]\GenericInstantiation.cs" />
+    <Compile Include="Core\ILAST\ILASTBuilder.cs" />
+    <Compile Include="Core\ILAST\ILASTTransformer.cs" />
+    <Compile Include="Core\ILAST\ITransformationHandler.cs" />
+    <Compile Include="Core\ILAST\Transformation\ArrayTransform.cs" />
+    <Compile Include="Core\ILAST\Transformation\BranchTransform.cs" />
+    <Compile Include="Core\ILAST\Transformation\ILASTTypeInference.cs" />
+    <Compile Include="Core\ILAST\Transformation\IndirectTransform.cs" />
+    <Compile Include="Core\ILAST\Transformation\NullTransform.cs" />
+    <Compile Include="Core\ILAST\Transformation\StringTransform [NEW].cs" />
+    <Compile Include="Core\ILAST\Transformation\VariableInlining.cs" />
+    <Compile Include="Core\Main Class [NEW]\IVMSettings.cs" />
+    <Compile Include="Core\OpCode Fixer [NEW]\JmpFixer %28Jmp Support%29 [NEW].cs" />
+    <Compile Include="Core\Main Class [NEW]\MethodVirtualizer.cs" />
+    <Compile Include="Core\Main Class [NEW]\Optimize [NEW]\Optimize Code.cs" />
+    <Compile Include="Core\Protections [NEW]\By Beds Control Flow\CTFLWBlock.cs" />
+    <Compile Include="Core\Protections [NEW]\By Beds Control Flow\CTFLWBlockBase.cs" />
+    <Compile Include="Core\Protections [NEW]\By Beds Control Flow\CTFLWBlockss.cs" />
+    <Compile Include="Core\Protections [NEW]\By Beds Control Flow\CFHelper.cs" />
+    <Compile Include="Core\Protections [NEW]\By Beds Control Flow\BedsControlFlow.cs" />
+    <Compile Include="Core\Protections [NEW]\Generator\Context\Generator.cs" />
+    <Compile Include="Core\Protections [NEW]\Generator\Context\GeneratorType.cs" />
+    <Compile Include="Core\Protections [NEW]\Generator\Context\Integers\Randomizer.cs" />
+    <Compile Include="Core\Protections [NEW]\Generator\Context\Strings\Randomizer.cs" />
+    <Compile Include="Core\Protections [NEW]\Generator\Context\Strings\RandomizerType.cs" />
+    <Compile Include="Core\Protections [NEW]\By Null Control Flow\NullControlFlow.cs" />
+    <Compile Include="Core\Protections [NEW]\By Null Control Flow\NullBlock.cs" />
+    <Compile Include="Core\Protections [NEW]\By Null Control Flow\NullBlockParser.cs" />
+    <Compile Include="Core\RT\BasicBlockChunk.cs" />
+    <Compile Include="Core\RT\BasicBlockSerializer.cs" />
+    <Compile Include="Core\RT\BinaryChunk.cs" />
+    <Compile Include="Core\RT\DbgWriter [NEW].cs" />
+    <Compile Include="Core\RT\HeaderChunk [NEW].cs" />
+    <Compile Include="Core\RT\IVMChunk.cs" />
+    <Compile Include="Core\RT\JumpTableChunk.cs" />
+    <Compile Include="Core\Protections [NEW]\MutateRT.cs" />
+    <Compile Include="Core\RT\Mutation\ConstantFields [NEW].cs" />
+    <Compile Include="Core\RT\Mutation\MethodPatcher [NEW].cs" />
+    <Compile Include="Core\Protections [NEW]\EddyControlFlow.cs" />
+    <Compile Include="Core\RT\Mutation\RuntimeSearch [NEW].cs" />
+    <Compile Include="Core\RT\Renamer [NEW]\NameService [NEW].cs" />
+    <Compile Include="Core\RT\Renamer [NEW]\RickRoller.cs" />
+    <Compile Include="Core\RT\Mutation\RTConstants [NEW].cs" />
+    <Compile Include="Core\RT\RTMap [NEW].cs" />
+    <Compile Include="Core\RT\Mutation\RuntimeHelpers.cs" />
+    <Compile Include="Core\RT\Mutation\RuntimeMutator [NEW].cs" />
+    <Compile Include="Core\RT\Mutation\RuntimePatcher [NEW].cs" />
+    <Compile Include="Core\RT\VMRuntime [NEW].cs" />
+    <Compile Include="Core\Main Class [NEW]\Scanner [NEW].cs" />
+    <Compile Include="Core\OpCode Fixer [NEW]\SwitchFixer %28Switch Suppot%29 [NEW].cs" />
+    <Compile Include="Core\Services [NEW]\CompressionService.cs" />
+    <Compile Include="Core\Services [NEW]\CRC32.cs" />
+    <Compile Include="Core\Services [NEW]\MethodTrace.cs" />
+    <Compile Include="Core\Services [NEW]\Murmur2 %28HASH%29.cs" />
+    <Compile Include="Core\Services [NEW]\RandomService.cs" />
+    <Compile Include="Core\Services [NEW]\RuntimeService.cs" />
+    <Compile Include="Core\Main Class [NEW]\UnreachableException [NEW].cs" />
+    <Compile Include="Core\Main Class [NEW]\Utils [NEW].cs" />
+    <Compile Include="Core\Main Class [NEW]\Virtualizer [NEW].cs" />
+    <Compile Include="Core\Helpers [NEW]\VisitFunc.cs" />
+    <Compile Include="Core\Services [NEW]\TraceService.cs" />
+    <Compile Include="Core\VMIL\ILOpCode.cs" />
+    <Compile Include="Core\VMIL\ILPostTransformer.cs" />
+    <Compile Include="Core\VMIL\ILTransformer.cs" />
+    <Compile Include="Core\VMIL\ILTranslator.cs" />
+    <Compile Include="Core\VMIL\IPostTransform.cs" />
+    <Compile Include="Core\VMIL\ITransform.cs" />
+    <Compile Include="Core\VMIL\ITranslationHandler.cs" />
+    <Compile Include="Core\VMIL\Transforms\BlockKeyTransform.cs" />
+    <Compile Include="Core\VMIL\Transforms\EntryExitTransform.cs" />
+    <Compile Include="Core\VMIL\Transforms\FixMethodRefTransform.cs" />
+    <Compile Include="Core\VMIL\Transforms\ReferenceOffsetTransform.cs" />
+    <Compile Include="Core\VMIL\Transforms\SaveInfoTransform.cs" />
+    <Compile Include="Core\VMIL\Transforms\SaveRegistersTransform.cs" />
+    <Compile Include="Core\VMIL\TranslationHelpers.cs" />
+    <Compile Include="Core\VMIL\Translation\ArithmeticLogicHandler.cs" />
+    <Compile Include="Core\VMIL\Translation\BranchHandlers.cs" />
+    <Compile Include="Core\VMIL\Translation\EHHandlers.cs" />
+    <Compile Include="Core\VMIL\Translation\InvocationHandlers.cs" />
+    <Compile Include="Core\VMIL\Translation\MemoryHandlers.cs" />
+    <Compile Include="Core\VMIL\Translation\MiscHandlers.cs" />
+    <Compile Include="Core\VMIL\Translation\PseudoHandlers.cs" />
+    <Compile Include="Core\VMIR\IRContext.cs" />
+    <Compile Include="Core\VMIR\IROpCode.cs" />
+    <Compile Include="Core\VMIR\IRTransformer.cs" />
+    <Compile Include="Core\VMIR\IRTranslator.cs" />
+    <Compile Include="Core\VMIR\ITransform.cs" />
+    <Compile Include="Core\VMIR\ITranslationHandler.cs" />
+    <Compile Include="Core\VMIR\RegAlloc\BlockLiveness.cs" />
+    <Compile Include="Core\VMIR\RegAlloc\LivenessAnalysis.cs" />
+    <Compile Include="Core\VMIR\RegAlloc\RegisterAllocator.cs" />
+    <Compile Include="Core\VMIR\Transforms\ConstantTypePromotionTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\EHTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\GetSetFlagTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\GuardBlockTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\InitLocalTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\InvokeTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\LeaTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\LogicTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\MarkReturnRegTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\MetadataTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\RegisterAllocationTransform.cs" />
+    <Compile Include="Core\VMIR\Transforms\StackFrameTransform.cs" />
+    <Compile Include="Core\VMIR\TranslationHelpers.cs" />
+    <Compile Include="Core\VMIR\Translation\BoxHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\BranchHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\CastHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\CompareHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\ConstantHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\ConvHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\ConvOvfHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\ConvOvfUnHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\EHHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\FieldHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\FnPtrHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\InvokeHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\LocalHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\LogicHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\MiscHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\NumericHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\ParameterHandlers.cs" />
+    <Compile Include="Core\VMIR\Translation\PointerHandlers.cs" />
+    <Compile Include="Core\VM\Descriptors\ArchDescriptor.cs" />
+    <Compile Include="Core\VM\Descriptors\DataDescriptor [NEW].cs" />
+    <Compile Include="Core\VM\Descriptors\FlagDescriptor.cs" />
+    <Compile Include="Core\VM\Descriptors\FuncSigDesc [NEW].cs" />
+    <Compile Include="Core\VM\Descriptors\OpCodeDescriptor.cs" />
+    <Compile Include="Core\VM\Descriptors\RegisterDescriptor.cs" />
+    <Compile Include="Core\VM\Descriptors\RTFlagDescriptor.cs" />
+    <Compile Include="Core\VM\Descriptors\RuntimeDescriptor.cs" />
+    <Compile Include="Core\VM\Descriptors\VCallOpsDescriptor.cs" />
+    <Compile Include="Core\VM\Descriptors\VMCallDescriptor.cs" />
+    <Compile Include="Core\VM\Descriptors\VMDescriptor.cs" />
+    <Compile Include="Core\VM\FuncSig.cs" />
+    <Compile Include="Core\VM\VMCalls.cs" />
+    <Compile Include="Core\VM\VMFlags.cs" />
+    <Compile Include="Core\VM\VMMethodInfo.cs" />
+    <Compile Include="Core\VM\VMRegisters.cs" />
+    <Compile Include="Core\Helpers [NEW]\Injection\InjectHelper.cs" />
+    <Compile Include="DynCipher\AST\ArrayIndexExpression.cs" />
+    <Compile Include="DynCipher\AST\AssignmentStatement.cs" />
+    <Compile Include="DynCipher\AST\BinOpExpression.cs" />
+    <Compile Include="DynCipher\AST\Expression.cs" />
+    <Compile Include="DynCipher\AST\LiteralExpression.cs" />
+    <Compile Include="DynCipher\AST\LoopStatement.cs" />
+    <Compile Include="DynCipher\AST\Statement.cs" />
+    <Compile Include="DynCipher\AST\StatementBlock.cs" />
+    <Compile Include="DynCipher\AST\UnaryOpExpression.cs" />
+    <Compile Include="DynCipher\AST\Variable.cs" />
+    <Compile Include="DynCipher\AST\VariableExpression.cs" />
+    <Compile Include="DynCipher\Converter [NEW]\Converter.cs" />
+    <Compile Include="DynCipher\Converter [NEW]\Emitter.cs" />
+    <Compile Include="DynCipher\Converter [NEW]\ExceptionMapper.cs" />
+    <Compile Include="DynCipher\Converter [NEW]\Extension.cs" />
+    <Compile Include="DynCipher\DynCipherService.cs" />
+    <Compile Include="DynCipher\Elements\AddKey.cs" />
+    <Compile Include="DynCipher\Elements\BinOp.cs" />
+    <Compile Include="DynCipher\Elements\CryptoElement.cs" />
+    <Compile Include="DynCipher\Elements\Matrix.cs" />
+    <Compile Include="DynCipher\Elements\NumOp.cs" />
+    <Compile Include="DynCipher\Elements\RotateBit.cs" />
+    <Compile Include="DynCipher\Elements\Swap.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\EmuContext.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\EmuInstruction.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Emulator.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Instructions\Add.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Instructions\And.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Instructions\Blt.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Instructions\Br.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Instructions\LdcI4.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Instructions\Ldloc.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Instructions\Or.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Instructions\Stloc.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Instructions\Sub.cs" />
+    <Compile Include="DynCipher\Emulator [NEW]\Instructions\Xor.cs" />
+    <Compile Include="DynCipher\Generation\CILCodeGen.cs" />
+    <Compile Include="DynCipher\Generation\CipherGenContext.cs" />
+    <Compile Include="DynCipher\Generation\CipherGenerator.cs" />
+    <Compile Include="DynCipher\Generation\DMCodeGen.cs" />
+    <Compile Include="DynCipher\Generation\ExpressionGenerator.cs" />
+    <Compile Include="DynCipher\Generation\x86CodeGen.cs" />
+    <Compile Include="DynCipher\Transforms\ConvertVariables.cs" />
+    <Compile Include="DynCipher\Transforms\ExpansionTransform.cs" />
+    <Compile Include="DynCipher\Transforms\MulToShiftTransform.cs" />
+    <Compile Include="DynCipher\Transforms\NormalizeBinOpTransform.cs" />
+    <Compile Include="DynCipher\Transforms\ShuffleTransform.cs" />
+    <Compile Include="DynCipher\Utils.cs" />
+    <Compile Include="Internal\VMTask.cs" />
+    <Compile Include="Core\RT\SaveVMPRuntimeLib [NEW].cs" />
+    <Compile Include="Internal\InitializePhase.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dnlib\xdnlib.csproj">
+      <Project>{4f743eb0-a7bf-43cb-a58e-46536c6bdffb}</Project>
+      <Name>xdnlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c60f5823495b4242" />
+    <None Include="Resources\f52b6acb1e894178" />
+    <None Include="Resources\SeKLxcb6qX0KIM8JWy3GiA" />
+    <None Include="Resources\_80DMUlAjbQM3mEyuNvXTog" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
